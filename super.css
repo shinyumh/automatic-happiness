@@ -1,0 +1,14 @@
+*{
+	font-family: 'Noto Sans', sans-serif;
+}
+:root{
+	--main-accent-color:#019875;
+}
+h3{
+	color:var(--main-accent-color);
+}
+.main-content{
+	height: auto;
+	width:100%;
+	padding: 30px;
+}
