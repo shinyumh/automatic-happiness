@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" href="super.css">
@@ -12,31 +12,80 @@
   </head>
 	<style media="screen">
 		p{
-			color:#019875;
+			color:#866ec7;
 			margin-top:20px;
 		}
 		input{
-			margin-top:20px;
-			background:#019875;
-			border:none!important;
-			color:white;
+			margin-top:10px;
+			margin-bottom: 10px;
+			background:white;
+			width: 100%;
+			padding: 10px;
+			border:1px solid #866ec7!important;
+			color:#866ec7;
+
+			border-radius: 5px;
 		}
 		button{
 			margin-top:20px;
-			background-color:#019875;
 			border:none;
-			color:white;
+			background:none;
+			padding:10px;
+			color:#866ec7;
+			font-size: 30px;
+		}
+		input::-webkit-file-upload-button{
+			background-color: white;
+			color:#866ec7;
+			border:1px solid white;
+			margin-right: 20px;
+			border-radius: 5px;
+		}
+		select{
+			margin-top:10px;
+			margin-bottom:10px;
+			width:100%;
+			border:1px solid #866ec7;
+			color: #866ec7;
+			background:white;
+			-webkit-appearance: none;
+    	-moz-appearance: none;
+    	appearance: none;
+    	padding: 10px;
+		}
+		.prompt{
+			color:gray;
+			margin-bottom: 10px;
+			font-style:italic;
+			margin-top:10px;
+		}
+		h4{
+			margin-top: 20px;
+			font-size: 15px;
+			color:gray;
+		}
+		a{
+			margin-top: 20px!important;
+			color: #866ec7;
+			font-style: italic;
 		}
 	</style>
   <body>
     <div class="main-content">
 			<h3> Add scores </h3>
-			<p> Select a file/screenshot to upload </p>
-			<input type="file" id="myfile" name="myfile">
+			<h4> Here are some recommended sites with standardised-testing resources </h4>
+			<a href="https://www.khanacademy.org/sat"> Khan Academy </a> <br>
+			<a href="https://www.uworld.com/"> UWorld </a> <br>
+			<a href="https://1600.io/"> 1600.io </a> <br>
+			<a href="https://reddit.com/r/sat"> Reddit (SAT) </a> <br>
+			<a href="https://reddit.com/r/act"> Reddit (ACT) </a> <br>
+			<h4> Happy Prepping , <br> Team Common Checklist </h4>
+			<p class="prompt"> Select a file/screenshot to upload </p>
+			<input type="file" id="myfile" name="myfile" size=>
 			<br>
-			<p>What was your testing date?</p>
+			<p class="prompt">What was your testing date?</p>
 			<input type="date" id="dateinput" name="dateinput">
-			<p>Select test type</p>
+			<p class="prompt">Select test type</p>
 			<select id="test-type">
 			  <option value="sat">SAT</option>
 			  <option value="act">ACT</option>

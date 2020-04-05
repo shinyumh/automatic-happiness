@@ -4,10 +4,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" href="super.css">
+		<link rel="stylesheet" href="footer.css">
     <title>Add activities</title>
   </head>
 	<style media="screen">
@@ -15,37 +16,113 @@
 			width:auto;
 			height:auto;
 			padding:30px;
-			border:2px solid #019875;
-			text-align:center;
-			border-radius:15px;
-			margin-top:30px;
+			margin-top:0px;
 		}
 		input{
 			padding:10px;
-			width:90%;
-			margin-top:20px;
+			width:100%;
+			margin-top:10px;
+			margin-bottom:10px;
+		}
+		.prompt{
+			color:gray;
+			font-style:italic;
+			margin-top:10px;
+			margin-bottom:10px;
 		}
 		button{
 			margin-top:20px;
 			border:none;
 			background:none;
 			padding:10px;
-			color:#019875;
+			color:#866ec7;
+			font-size:30px;
+		}
+		.text-inp{
+				border:1px solid #866ec7;
+				border-radius:5px;
+		}
+		.text-inp::placeholder{
+			color:#866ec7;
+		}
+		select{
+			margin-top:10px;
+			margin-bottom:10px;
+			width:100%;
+			border:1px solid #866ec7;
+			color: #866ec7;
+			background:white;
+			-webkit-appearance: none;
+    	-moz-appearance: none;
+    	appearance: none;
+    	padding: 10px;
+		}a{
+			color:#866ec7;
+			margin-top: 20px!important;
+			font-style: italic;
+		}
+		h4{
+			margin-top: 20px;
+			font-size: 15px;
+			color:gray;
 		}
 	</style>
   <body>
     <div class="main-content">
 			<h3> Add activities </h3>
+			<h4> Here are some carefully curated links related to the Common Application Activities Section </h4>
+			<a href="https://blog.collegevine.com/how-to-fill-out-the-common-app-activities-section/"> CollegeVine </a> <br>
+			<a href="https://www.shemmassianconsulting.com/blog/common-app-activities-section"> Shemmassian Consulting </a> <br>
+			<a href="https://www.collegeessayguy.com/blog/guide-college-activities-list-common-app-example-application"> College Essay Guy </a> <br>
+			<h4> Happy Applying , <br> Team Common Checklist </h4>
 			<div class="act-form">
-				<input type="text" placeholder="Enter activity name">
-				<input type="text" placeholder="Enter activity description">
-				<input type="text" placeholder="Enter estimated weeks per year">
-				<input type="text" placeholder="Enter estimated hours per week">
-				<input type="text" placeholder="In which grades did you participate?">
+				<p class="prompt"> Which type best fits your activity? </p>
+				<select id="activite">
+					<option value="1">Academic</option>
+					<option value="2">Art</option>
+					<option value="3">Athletics: Club</option>
+					<option value="4">Athletics: JV/Varsity</option>
+					<option value="5">Career-Oriented</option>
+					<option value="6">Community Service (Volunteer)</option>
+					<option value="7">Computer/Technology</option>
+					<option value="8">Cultural</option>
+					<option value="9">Debate/Speech</option>
+					<option value="10">Environmental</option>
+					<option value="11">Family Responsibilities</option>
+					<option value="12">Foreign Exchange</option>
+					<option value="13">Journalism/Publication</option>
+					<option value="14">Junior R.O.T.C.</option>
+					<option value="15">LGBT</option>
+					<option value="16">Music: Instrumental</option>
+					<option value="17">Music: Vocal</option>
+					<option value="18">Religious</option>
+					<option value="19">Research</option>
+					<option value="20">Robotics</option>
+					<option value="21">School Spirit</option>
+					<option value="22">Science/Math</option>
+					<option value="23">Student Govt./Politics</option>
+					<option value="24">Theater/Drama</option>
+					<option value="25">Work(paid)</option>
+					<option value="26">Other Club/Activity</option>
+				</select>
+
+				<p class="prompt"> Position you held and organisation name (50 words or less) </p>
+				<input type="text" class="text-inp" placeholder="Enter here">
+				<p class="prompt"> Describe your activity (150 words or less) </p>
+				<input type="text" class="text-inp" placeholder="Enter here">
+				<p class="prompt"> Enter estimated hours/week</p>
+				<input type="text" class="text-inp" placeholder="Enter here">
+				<p class="prompt"> Enter estimated weeks/year </p>
+				<input type="text" class="text-inp" placeholder="Enter here">
+				<p class="prompt"> Enter grades of participation</p>
+				<input type="text" class="text-inp" placeholder="Enter here">
 				<br>
 				<button type="button" name="button">Submit</button>
 			</div>
 		</div>
+		<footer class="site-footer">
+			Common Checklist by Kepler Developers
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

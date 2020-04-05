@@ -1,8 +1,8 @@
 *{
-	font-family: 'Noto Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 :root{
-	--main-accent-color:#019875;
+	--main-accent-color:#866ec7;
 }
 h3{
 	color:var(--main-accent-color);
@@ -11,4 +11,8 @@ h3{
 	height: auto;
 	width:100%;
 	padding: 30px;
+}
+table{
+	color:gray!important;
+	padding: 20px!important;
 }
