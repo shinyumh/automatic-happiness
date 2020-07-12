@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="footer.css">
+
   </head>
 	<style media="screen">
 
@@ -129,32 +130,113 @@
 
 	      </div>
     	</nav>
-
         <!-- Page Content  -->
       <div id="content" class="p-4 p-md-5 pt-5">
-
         <h2 class="mb-4">Dashboard</h2>
 				<h3 class="mb-4 "> Hi there, Nirbhay </h3>
-				<p>Appyling to college is stressful. We know that. And we're here to help. With College Collab, our users can streamline their college application process. Serving as an intermediary to the Common Application portal, with College Collab, students can collect all the relevant documents they need for their application and get them approved by their counsellors.</p>
-				<h4> Important general deadlines </h4>
+			<!--	<p>Appyling to college is stressful. We know that. And we're here to help. With College Collab, our users can streamline their college application process. Serving as an intermediary to the Common Application portal, with College Collab, students can collect all the relevant documents they need for their application and get them approved by their counsellors.</p>-->
+
+        <div id="percent">
+        <h4>Application Completion</h4>
+        </div>
+        <div id="donutchart" style="width: 500px; height: 300px;"></div>
+<div id="wrapper">
+
+  <div id="progressbars">
+<br>
+      <h4>Application Progress</h4>
+<h3>Activities Progress</h3>
+
+        <div id="myProgress">
+          <div id="myBar1">
+          </div>
+        </div>
+
+<!--        <br>
+        <button onclick="move1(this)">start</button>
+        <button onclick="sos1(this)">pause</button>
+        <button onclick="send1()">send</button>-->
+        <br>
+        <h3>Recommenders Progress</h3>
+
+        <div id="myProgress">
+          <div id="myBar2"></div>
+        </div>
+<!--
+        <br>
+        <button onclick="move2(this)">start</button>
+        <button onclick="sos2(this)">pause</button>
+        <button onclick="send2()">send</button>-->
+        <br>
+        <h3>Scores Progress</h3>
+
+        <div id="myProgress">
+          <div id="myBar3"></div>
+        </div>
+<!--
+        <br>
+        <button onclick="move3(this)">start</button>
+        <button onclick="sos3(this)">pause</button>
+        <button onclick="send3()">send</button>-->
+        <br>
+        <h3>Transcripts Progress</h3>
+
+        <div id="myProgress">
+          <div id="myBar4"></div>
+        </div>
+<!--
+        <br>
+        <button onclick="move4(this)">start</button>
+        <button onclick="sos4(this)">pause</button>
+        <button onclick="send4()">send</button>
+        <br><br>
+-->
+</div>
+</div>
+
+<div id= "deadlines">
+  <div id="countdowns">
+    <br>
+<h4>Essay Progress</h4>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <div id="essayprogress">
+    <div id="chart_div"></div>
+  </div>
+  <br>
+        <h4>Important Deadlines</h4>
 				<h5 class="timer-title"> SAT 2020 Testing dates (subject to change) </h5>
 				August 29, 2020   <p id="t4"></p>
 				October 3, 2020	<p id="t5"></p>
 				November 7, 2020 <p id="t6"></p>
 				December 5, 2020 <p id="t7"></p>
-				<h5 class="timer-title"> Early Decision Deadline - November 1st, 2020 </h5>
-				<p id="t1"></p>
-				<h5 class="timer-title"> Early Action (GATech) and Oxbridge Deadline - October 15th, 2020 </h5>
-				<p id="t3"></p>
 				<h5 class="timer-title"> Regular Decision Deadline - January 1st, 2021 </h5>
 				<p id="t2"></p>
 				<h4> Personal Deadlines </h4>
 				<h5 class="timer-title"> Custom deadline </h5>
 				<p id="t4">Time till deadline</p>
-
       </div>
 		</div>
 
+    <div id="notes">
+      <div id="innernote">
+      <h4 style="color: white;"><center><b>N O T E S</b></center></h4>
+      <div id="individualnotes">
+        <h5 id="counselorname">counselor name • <i>date</i></h5>
+        <p id="counselornote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus vitae congue mauris rhoncus aenean. Eu augue ut lectus arcu bibendum at varius vel pharetra.</p>
+      </div>
+      <br>
+      <div id="individualnotes">
+        <h5 id="counselorname">counselor name • <i>date</i></h5>
+        <p id="counselornote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <br>
+      <div id="individualnotes">
+        <h5 id="counselorname">counselor name • <i>date</i></h5>
+        <p id="counselornote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus vitae congue mauris rhoncus aenean.</p>
+      </div>
+    </div>
+    </div>
+</div>
 		<script>
 		function countdown(dateStr,id){
 			// Set the date we're counting down to
@@ -193,7 +275,6 @@
 		countdown("Oct 3, 2020 00:00:00","t5")
 		countdown("Nov 7, 2020 00:00:00","t6")
 		countdown("Dec 5, 2020 00:00:00","t7")
-
 		</script>
 
     <script src="js/jquery.min.js"></script>
